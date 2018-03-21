@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <title>Wettertrend</title>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+    <!-- BS CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet"
+        type="text/css"
+        media="screen"
+        href="wettertrend.css" />
+    <!-- jQuery -->
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- BS JS -->
+    <script type="text/javascript"
+        src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="wettertrend.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <!-- Heading -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <h1>Willkommen zum Wettertrend in Trier</h1>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Aktuelles Wetter -->
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h2>Aktuelle Temperatur in Trier</h2>
+                    </div>
+                </div>
+                <!-- Result -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div id="currentWeatherResult"></div>
+                    </div>
+                </div>
+                <!-- Reload Button -->
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <button type="button"
+                            class="btn btn-success"
+                            onclick="handleReloadClicked()">Neu Laden</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Trend -->
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h2>Vorhersage</h2>
+                    </div>
+                </div>
+                <!-- Forecast results -->
+                <div class="row">
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="forecastResult"></div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="forecastResult"></div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="forecastResult"></div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="forecastResult"></div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                        <div class="forecastResult"></div>
+                    </div>
+                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Error Message -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="alert alert-danger"
+                    id="errorMessage"
+                    hidden>
+                    <button type="button"
+                        class="close"
+                        data-dismiss="alert"
+                        aria-hidden="true">&times;</button>
+                    <strong>Hoppla!</strong> Etwas ist beim Laden der Temperaturdaten schief gelaufen.
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

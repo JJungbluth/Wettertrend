@@ -1,0 +1,18 @@
+#currentWeatherResult {
+    font-size: 40px;
+}
+
+.forecastResult {
+    font-size: 20px;
+}
+
+.hotter {
+    color: red
+}
+
+.colder {
+    color: blue
+}
+#errorMessage{
+    margin-top: 5px;
+}
