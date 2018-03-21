@@ -80,10 +80,14 @@ function requestTempTrend() {
 function setTrendClass(currentTemp, trendTemp) {
     var trendElements = $('.forecastResult');
     $(trendElements).each(function (index) {
-        if (currentTemp < trendTemp[index])
+        if (currentTemp < trendTemp[index]) {
             $(this).addClass('hotter');
-        else
+            $(this).append('<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>')
+        }
+        else {
             $(this).addClass('colder');
+            $(this).append('<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>')
+        }
     })
 }
 
