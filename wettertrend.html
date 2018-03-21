@@ -40,56 +40,60 @@
             </div>
         </div>
         <div class="row">
-            <!-- Aktuelles Wetter -->
+
             <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2>Aktuelle Temperatur in Trier</h2>
+                <!-- Aktuelles Wetter -->
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Aktuelle Temperatur in Trier</h3>
                     </div>
-                </div>
-                <!-- Result -->
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <div id="currentWeatherResult"></div>
-                    </div>
-                </div>
-                <!-- Reload Button -->
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <button type="button"
-                            class="btn btn-success"
-                            onclick="handleReloadClicked()">Neu Laden</button>
+                    <div class="panel-body">
+                        <!-- Result -->
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                <div id="currentWeatherResult"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Trend -->
-            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        <h2>Vorhersage</h2>
-                    </div>
-                </div>
-                <!-- Forecast results -->
-                <div class="row">
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                        <div class="forecastResult"></div>
-                    </div>
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                        <div class="forecastResult"></div>
-                    </div>
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                        <div class="forecastResult"></div>
-                    </div>
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                        <div class="forecastResult"></div>
-                    </div>
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                        <div class="forecastResult"></div>
-                    </div>
-                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
-                    </div>
-                </div>
 
+            <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Vorhersage</h3>
+                    </div>
+                    <div class="panel-body">
+                        <!-- Forecast results -->
+                        <div class="row">
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div class="forecastResult"></div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div class="forecastResult"></div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div class="forecastResult"></div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div class="forecastResult"></div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                                <div class="forecastResult"></div>
+                            </div>
+                            <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Reload Button -->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <button type="button"
+                    class="btn btn-success"
+                    onclick="handleReloadClicked()">Neu Laden</button>
             </div>
         </div>
         <!-- Error Message -->
